@@ -2,12 +2,12 @@ package br.com.zupacademy.bruno.casadocodigo.Categoria;
 
 import javax.validation.constraints.NotBlank;
 
-import br.com.zupacademy.bruno.casadocodigo.Validator.IsUnique;
+import br.com.zupacademy.bruno.casadocodigo.Validator.IsUnico;
 
 public class CategoriaForm {
 
 	@NotBlank
-	@IsUnique(entidade = Categoria.class, atributo = "nome")
+	@IsUnico(entidade = Categoria.class, atributo = "nome")
 	private String nome;
 
 	public String getNome() {

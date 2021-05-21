@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import br.com.zupacademy.bruno.casadocodigo.Validator.IsUnique;
+import br.com.zupacademy.bruno.casadocodigo.Validator.IsUnico;
 
 public class AutorForm {
 
@@ -16,7 +16,7 @@ public class AutorForm {
 	
 	@NotBlank
 	@Email
-	@IsUnique(entidade = Autor.class, atributo = "email")
+	@IsUnico(entidade = Autor.class, atributo = "email")
 	private String email;
 	
 	@NotBlank
