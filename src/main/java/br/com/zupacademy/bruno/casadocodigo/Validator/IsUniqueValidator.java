@@ -1,4 +1,4 @@
-package br.com.zupacademy.bruno.casadocodigo.Autor.Validator;
+package br.com.zupacademy.bruno.casadocodigo.Validator;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package br.com.zupacademy.bruno.casadocodigo.Autor.Validator;
+package br.com.zupacademy.bruno.casadocodigo.Validator;
 
 import static java.lang.annotation.ElementType.CONSTRUCTOR;
 import static java.lang.annotation.ElementType.FIELD;

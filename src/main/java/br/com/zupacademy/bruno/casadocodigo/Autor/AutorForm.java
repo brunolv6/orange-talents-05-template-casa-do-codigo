@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Length;
 
-import br.com.zupacademy.bruno.casadocodigo.Autor.Validator.IsUnique;
+import br.com.zupacademy.bruno.casadocodigo.Validator.IsUnique;
 
 public class AutorForm {
 
