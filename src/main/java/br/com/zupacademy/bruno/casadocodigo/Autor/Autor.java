@@ -15,31 +15,31 @@ import org.hibernate.validator.constraints.Length;
 
 @Entity
 public class Autor {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@NotBlank
 	@NotNull
 	private String nome;
-	
+
 	@NotBlank
 	@NotNull
 	@Email
 	@Column(unique = true)
 	private String email;
-	
+
 	@NotBlank
 	@NotNull
 	@Length(max = 400)
 	private String descricao;
-	
+
 	@NotNull
 	private LocalDateTime dataCriacao = LocalDateTime.now();
 
 	public Autor() {
-		
+
 	}
 
 	public Autor(@NotBlank @NotNull String nome, @NotBlank @NotNull @Email String email,
@@ -47,6 +47,14 @@ public class Autor {
 		this.nome = nome;
 		this.email = email;
 		this.descricao = descricao;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getDescricao() {
+		return descricao;
 	}
 
 }

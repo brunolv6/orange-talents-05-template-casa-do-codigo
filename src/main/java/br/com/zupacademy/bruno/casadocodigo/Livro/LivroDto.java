@@ -3,8 +3,6 @@ package br.com.zupacademy.bruno.casadocodigo.Livro;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-
 public class LivroDto {
 	private Long id;
 
